@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        body{
+            background-color: #d3d3d3;
+        }
+
+        #wrapper{
+            background-color: #BEBEBE;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* width: 720px; */
+            width: 50%;
+            height: 1000px;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+            border-radius: 3px;
+
+        }
+
+        .red{
+            color: #d30000;
+        }
+
+        .green{
+            color: #3cb043;
+        }
+
+        .blue{
+            color: #152086;
+        }
+
+        #color{
+            margin: 15px 0;
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            border-radius: 3px;
+        }
+
+        #colorWrap{
+            height: 200px;
+            margin-top: 60px;
+        }
+
+        #colorWrap, #rgb, #input, #control{
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        input[type="number"]{
+            width: 30%;
+            text-align: center;
+            border: 1px solid black;
+            outline: none;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        #control{
+            margin: 15px 0;
+        }
+
+        .randombtn{
+            background-color: #E2574C;
+        }
+
+        .genbtn{
+            background-color: #58AD69;
+        }
+
+        .resetbtn{
+            background-color: #59BACC;
+        }
+
+        .controlUI{
+            padding: 5px;
+            border: 1px solid  black;
+            height: 10%;
+            width: 30%;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease
+        }
+
+        .randombtn:hover{
+            background-color: #c91432;
+        }
+        
+
+        .genbtn:hover{
+            background-color: #198754;
+        }
+
+        .resetbtn:hover{
+            background-color: #226fbe;
+        }
+
+        .boxcontent{
+            position: relative;
+            top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            height: 60%;
+        }
+
+        #box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box8,#box9,#box10{
+            width: 112px;
+            height: 100px;
+            margin: 10px 1rem;
+            border: 1px solid black;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .boxwrap{
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .alpha{
+            text-align: center;
+        }
+
+        @media (max-width: 863px){
+            #wrapper{
+                height: 1100px;
+                margin-top: 50px;
+            }
+        }
+
+        @media (max-width: 784px){
+            #wrapper{
+                height: 1120px;
+            }
+        }
+        @media (max-width: 579px){
+            #wrapper{
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 540px){
+            #wrapper{
+                margin-top: 200px;
+            }
+        }
