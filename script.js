@@ -27,6 +27,11 @@ function generateAlpha(){
 
     function reset(){
         document.getElementById("color").style.backgroundColor = "";
+            
+        document.getElementById("redValue").value = "";
+        document.getElementById("greenValue").value = "";
+        document.getElementById("blueValue").value = "";
+
 
         for(let i = 1; i <= 10; i++){
             document.getElementById(`box${i}`).style.backgroundColor = "";
